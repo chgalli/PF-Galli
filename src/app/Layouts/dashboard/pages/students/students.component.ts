@@ -10,12 +10,12 @@ import { StudentsService } from '../../../../Core/services/students.service';
 
 //Simula como si fuera una db, la lista de los alumnos.
 const STUDENTS_DATA: Students[] = [
-  { IDEstudiante: 1, Apellido: "Perez", Nombre: 'Juan', Correo: 'juan@example.com', Usuario: "JuanP", Clave: "JuanP", Rol: "Estudiante" },
-  { IDEstudiante: 2, Apellido: 'Gomez', Nombre: 'Maria', Correo: 'maria@example.com', Usuario: 'MariaG', Clave: 'MariaG', Rol: 'Estudiante' },
-  { IDEstudiante: 3, Apellido: 'Rodriguez', Nombre: 'Carlos', Correo: 'carlos@example.com', Usuario: 'CarlosR', Clave: 'CarlosR', Rol: 'Estudiante' },
-  { IDEstudiante: 4, Apellido: 'Lopez', Nombre: 'Ana', Correo: 'ana@example.com', Usuario: 'AnaL', Clave: 'AnaL', Rol: 'Estudiante' },
-  { IDEstudiante: 5, Apellido: 'Martinez', Nombre: 'Luis', Correo: 'luis@example.com', Usuario: 'LuisM', Clave: 'LuisM', Rol: 'Administrador' },
-  { IDEstudiante: 6, Apellido: 'Fernandez', Nombre: 'Laura', Correo: 'laura@example.com', Usuario: 'LauraF', Clave: 'LauraF', Rol: 'Administrador' },
+  { IDEstudiante: 1, Apellido: "Keaton", Nombre: 'Lucas', Correo: 'l.keaton@mail.com', Usuario: "lkeaton", Clave: "lkeaton", Rol: "Estudiante" },
+  { IDEstudiante: 2, Apellido: 'Sagan', Nombre: 'Carl', Correo: 'c.sagan@mail.com', Usuario: 'csagan', Clave: 'csagan', Rol: 'Estudiante' },
+  { IDEstudiante: 3, Apellido: 'Antonieta', Nombre: 'Maria', Correo: 'm.antomieta@mail.com', Usuario: 'mantomieta', Clave: 'mantomieta', Rol: 'Estudiante' },
+  { IDEstudiante: 4, Apellido: 'Taylor', Nombre: 'Elizabeth', Correo: 'e.taylor@mail.com', Usuario: 'etaylor', Clave: 'etaylor', Rol: 'Estudiante' },
+  { IDEstudiante: 5, Apellido: 'Witz', Nombre: 'Manuel', Correo: 'm.witz@mail.com', Usuario: 'mwitz', Clave: 'mwitz', Rol: 'Administrador' },
+  { IDEstudiante: 6, Apellido: 'Pausini', Nombre: 'Laura', Correo: 'l.pausini@mail.com', Usuario: 'lpausini', Clave: 'lpausini', Rol: 'Administrador' },
 ]
 
 @Component({
