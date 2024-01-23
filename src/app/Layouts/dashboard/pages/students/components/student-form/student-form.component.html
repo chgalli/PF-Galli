@@ -1,0 +1,48 @@
+ <div class="contenedor-agregar">
+        <form [formGroup]="userFormGroup" class="edit-student-form" (submit)="onSubmit($event, 'Agregar')">
+          <div class="form-container">
+            <div class="form-row">
+              <mat-form-field class="form-field">
+                <mat-label>Apellido</mat-label>
+                <input formControlName="apellido" matInput id="apellido" name="apellido">
+              </mat-form-field>
+              <mat-form-field class="form-field">
+                <mat-label>Nombre</mat-label>
+                <input formControlName="nombre" matInput id="nombre" name="nombre">
+              </mat-form-field>
+            </div>
+            <div class="form-row">
+              <mat-form-field class="form-field">
+                <mat-label>Correo</mat-label>
+                <input formControlName="correo" matInput id="correo" name="correo">
+              </mat-form-field>
+            </div>
+            <div class="form-row">
+              <mat-form-field class="form-field">
+                <mat-label>Usuario</mat-label>
+                <input formControlName="usuario" matInput id="usuario" name="usuario">
+              </mat-form-field>
+              <mat-form-field class="form-field">
+                <mat-label>Clave</mat-label>
+                <input formControlName="clave" matInput id="clave" name="clave">
+              </mat-form-field>
+            </div>
+            <div class="form-row">
+              <mat-form-field class="form-field">
+                <mat-label>Rol</mat-label>
+                <mat-select formControlName="rol" id="rol" name="rol">
+                  <mat-option value="Estudiante">Estudiante</mat-option>
+                  <mat-option value="Administrador">Administrador</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="form-row">
+                <div class="form-row">
+                    <button mat-raised-button class="my-button" color="primary" type="submit" [hidden]="!isAgregarVisible" (click)="onSubmit($event, 'Agregar')">AGREGAR</button>
+                    <button mat-raised-button class="my-button" color="primary" type="submit" [hidden]="!isEditarVisible"  (click)="onSubmit($event, 'Modificar') ">MODIFICAR</button>
+                    <button mat-raised-button class="my-button" color="warn" style="margin-left:10px;" type="submit" [hidden]="!isCancelarVisible"  (click)="onSubmit($event, 'Cancelar') ">CANCELAR</button>
+                  </div>
+            </div>
+          </div>
+        </form>
+      </div>
